@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From Cams Shbbn</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle, #301010, #080000 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.card {
+    width: 90%;
+    max-width: 450px;
+    padding: 45px 20px;
+    text-align: center;
+    border: 2px solid #ff2020;
+    border-radius: 25px;
+    background: rgba(40, 0, 0, .65);
+    box-shadow: 0 0 30px red,
+                inset 0 0 25px #ff000033;
+    animation: entrance 1.2s ease;
+}
+
+h1 {
+    color: #ff3030;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px red;
+}
+
+.middle {
+    font-size: clamp(130px, 35vw, 190px);
+    margin: 30px 0;
+    animation: pulse 1.5s infinite;
+    filter: drop-shadow(0 0 25px red);
+}
+
+.message {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #ff4444;
+}
+
+.signature {
+    margin-top: 25px;
+    font-size: 17px;
+    letter-spacing: 4px;
+}
+
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #ff2020;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px red;
+}
+
+button:active {
+    transform: scale(.9);
+}
+
+#extra {
+    display: none;
+    margin-top: 20px;
+    color: #ff7777;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes entrance {
+    from {
+        opacity: 0;
+        transform: scale(.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>HEY YOU!</h1>
+
+    <div class="middle">🖕🏻</div>
+
+    <div class="message">
+        NO WORDS NEEDED! 😂
+    </div>
+
+    <div class="signature">
+        FROM: CAMS SHBBN
+    </div>
+
+    <button onclick="showMessage()">
+        CLICK ME 🖕🏻
+    </button>
+
+    <div id="extra">
+        HAHAHA! SURPRISE! 😂🔥
+    </div>
+
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById("extra").style.display = "block";
+}
+</script>
+
+</body>
+</html>
